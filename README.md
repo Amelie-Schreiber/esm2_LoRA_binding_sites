@@ -3,7 +3,7 @@ Training a Low Rank Adaptation of the protein language model ESM-2 for RNA bindi
 
 ## Training the Model
 To train your own, clone the repo and create a conda environment using the `environment.yaml` file. Then run:
-```
+```python
 from lora_binding_sites_newest_v3 import main
 
 main()
@@ -11,7 +11,7 @@ main()
 
 ## Using the model:
 To use the model, try running:
-```
+```python
 from transformers import AutoModelForTokenClassification, AutoTokenizer
 from peft import PeftModel
 import torch
