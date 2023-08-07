@@ -1,5 +1,7 @@
 # esm2_LoRA_binding_sites
-Training a Low Rank Adaptation of the protein language model ESM-2 for RNA binding site predictor
+This repo is fo training a Low Rank Adaptation of the protein language model ESM-2 for an RNA binding site predictor. 
+This is a binary token classification task. The model is the smallest of the ESM-2 models [facebook/esm2_t6_8M_UR50D](https://huggingface.co/facebook/esm2_t6_8M_UR50D). 
+The train/test split was 75/25 and the model achieves an eval loss of 0.1791934072971344. The model weights and configuration can be found on [Hugging Face here](https://huggingface.co/AmelieSchreiber/esm2_t6_8M_UR50D_LoRA_RNA-binding).
 
 ## Training the Model
 To train your own, clone the repo and create a conda environment using the `environment.yaml` file. Then run:
